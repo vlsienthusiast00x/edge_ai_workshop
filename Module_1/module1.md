@@ -17,7 +17,7 @@ Edge AI is the practice of running artificial intelligence models directly on lo
 
 ---
 
-## Getting familiar with VSDSquadron PRO 
+# Getting familiar with VSDSquadron PRO 
 
 ## VSDSquadron PRO Specifications
 
