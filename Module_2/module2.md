@@ -10,7 +10,15 @@ Linear Regression is a fundamental machine learning algorithm used for predictiv
 
 #### Mathematical representation
 𝑦 = 𝛽0 + 𝛽1.𝑥 + 𝜖
+- 𝑦 : Predicted value (dependent variable)
 
+- 𝑥 : Input feature (independent variable)
+
+- 𝛽0 : Intercept (bias term)
+
+- 𝛽1 : Slope (weight coefficient)
+
+- 𝜖 : Error term (difference between prediction and actual value)
 
 
 
