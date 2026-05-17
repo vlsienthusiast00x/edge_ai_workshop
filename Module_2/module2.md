@@ -1,4 +1,4 @@
-# Module 2 - Module 2 - ML Foundations (Regression & Optimization)
+# Module 2 - ML Foundations (Regression & Optimization)
 ## Machine learning
 Machine learning (ML) is a branch of artificial intelligence that allows computers to learn patterns and make predictions or decisions from data without being explicitly programmed with fixed rules. The below topics are some of the basic fields of ML:-
 
