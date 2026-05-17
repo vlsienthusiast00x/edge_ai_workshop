@@ -1,9 +1,9 @@
 # Module 1 - Edge AI Orientation & Hardware Primer
 
-# Traditional Logic vs edge AI Logic
-## What is Edge AI?
+## Traditional Logic vs edge AI Logic
+### What is Edge AI?
 Edge AI is the practice of running artificial intelligence models directly on local devices (like smartphones, IoT sensors, cameras, or robots) instead of relying on cloud servers. This enables real-time decision-making, faster responses, better privacy, and reduced bandwidth usage.
-## Comparison Table
+### Comparison Table
 
 | Aspect            | Traditional Logic                 | AI Logic (Edge AI)                   |
 |-------------------|-----------------------------------|-------------------------------------|
@@ -17,9 +17,9 @@ Edge AI is the practice of running artificial intelligence models directly on lo
 
 ---
 
-# Getting familiar with VSDSquadron PRO 
+## Getting familiar with VSDSquadron PRO 
 
-## VSDSquadron PRO Specifications
+### VSDSquadron PRO Specifications
 
 ### Board Overview
 - **Form Factor**: 84 mm × 52 mm (Max Height: Top 8 mm, Bottom 1 mm)
