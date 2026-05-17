@@ -20,5 +20,9 @@ Linear Regression is a fundamental machine learning algorithm used for predictiv
 
 - 𝜖 : Error term (difference between prediction and actual value)
 
+#### Implementation in python using scikit
+<img width="800" height="680" alt="image" src="https://github.com/user-attachments/assets/113d166b-2af4-44ec-93bb-0a605d4032f7" />
+
+
 
 
