@@ -6,7 +6,7 @@ Machine learning (ML) is a branch of artificial intelligence that allows compute
 #### Definition:
 Linear Regression is a fundamental machine learning algorithm used for predictive modeling. It establishes a linear relationship between an independent variable (input) and a dependent variable (output), by fitting a straight line to the data.
 
-<img width="1000" height="688" alt="image" src="https://github.com/user-attachments/assets/51a68bbe-6636-42d8-8aed-2d6782299314" />
+<img width="750" height="400" alt="image" src="https://github.com/user-attachments/assets/51a68bbe-6636-42d8-8aed-2d6782299314" />
 
 #### Mathematical representation
 𝑦 = 𝛽0 + 𝛽1.𝑥 + 𝜖
