@@ -35,4 +35,7 @@ Polynomial regression is a type of regression analysis that models the relations
 - 𝑛 : Degree of the polynomial
 - 𝜖 : Error term
 
+#### Implementation using scikit
+<img width="797" height="680" alt="image" src="https://github.com/user-attachments/assets/9d1006f4-d55a-424c-ad64-6cb72326ba08" />
+
 
