@@ -27,6 +27,9 @@ Linear Regression is a fundamental machine learning algorithm used for predictiv
 #### Definition
 Polynomial regression is a type of regression analysis that models the relationship between variables using a polynomial equation, allowing you to fit curved lines instead of just a straight line.
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/9487ada0-a92b-4714-aca3-de0320389582" />
+
+
 #### Mathematical representation
 𝑦 = 𝛽0 + 𝛽1.𝑥 + 𝛽2.𝑥2 + 𝛽3.𝑥3+⋯+𝛽𝑛.𝑥𝑛+𝜖
 - 𝑦 : Dependent variable (output)
