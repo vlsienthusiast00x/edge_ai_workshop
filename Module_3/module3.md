@@ -4,4 +4,4 @@ A K-Nearest Neighbors (KNN) classifier is a supervised machine learning algorith
 
 -----
 
-<img width="600" height="250" alt="image" src="https://github.com/user-attachments/assets/d5fc2826-d940-4fec-b0f7-0ef6318f7a9c" />
+<img width="550" height="250" alt="image" src="https://github.com/user-attachments/assets/d5fc2826-d940-4fec-b0f7-0ef6318f7a9c" />
