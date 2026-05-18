@@ -46,8 +46,8 @@ To implement the polynomial regresser model on VSDSquadron PRO it is required to
 1. Open Freedon Studio and on the to left corner click on SiFveTools -> Create a Software Example Project -> Create a new Validation Software Project.
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/5ac4255e-925d-4c41-aa3a-959ca169f5c7" />
 
-2. On the box that appears on screen find 'Select Target' section and select 'sifive-hifive1'. 
+2. On the box that appears on screen find 'Select Target' section and select 'sifive-hifive1'. And click on 'Finish'.
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/d772f239-c338-4591-a83c-77554ce13c3a" />
 
-
+3. Close the debug configuration box and then replace the main.c with the [polynomial_regression.c]() 
 
