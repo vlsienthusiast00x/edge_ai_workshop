@@ -44,7 +44,7 @@ Polynomial regression is a type of regression analysis that models the relations
 ### Python to silicon: Implementation on VSDSquadron PRO
 To implement the polynomial regresser model on VSDSquadron PRO it is required to install Freedom Studio by SiFive with the necessary RISC-V toolchain. Then follow the below steps:
 1. Open Freedon Studio and on the to left corner click on SiFveTools -> Create a Software Example Project -> Create a new Validation Software Project.
-<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/5ac4255e-925d-4c41-aa3a-959ca169f5c7" />
+<img width="800" height="450s" alt="image" src="https://github.com/user-attachments/assets/5ac4255e-925d-4c41-aa3a-959ca169f5c7" />
 
 
 
