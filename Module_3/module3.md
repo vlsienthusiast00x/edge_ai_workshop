@@ -12,3 +12,5 @@ In this implementation of the knn classifier we will be using a famous dataset c
 <img width="550" height="400" alt="image" src="https://github.com/user-attachments/assets/52f4eb11-3967-4f3f-85f0-9c8a810df632" />
 
 
+
+
