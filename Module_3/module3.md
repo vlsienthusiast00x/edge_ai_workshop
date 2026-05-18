@@ -9,6 +9,6 @@ A K-Nearest Neighbors (KNN) classifier is a supervised machine learning algorith
 ### Implementation using scikit
 In this implementation of the knn classifier we will be using a famous dataset called iris which classifies data into one of the 3 classes.
 
-<img width="550" height="250" alt="image" src="https://github.com/user-attachments/assets/52f4eb11-3967-4f3f-85f0-9c8a810df632" />
+<img width="550" height="350" alt="image" src="https://github.com/user-attachments/assets/52f4eb11-3967-4f3f-85f0-9c8a810df632" />
 
 
