@@ -52,5 +52,6 @@ To implement the polynomial regresser model on VSDSquadron PRO it is required to
 3. Connect the VSDSquadron PRO board, close the debug configuration box and then replace the main.c with the [polynomial_regression.c](codes/polynomial_regression.c) and on the top click on 'Run' and observe output on the terminal.
 <img width="800" height="353" alt="image" src="https://github.com/user-attachments/assets/cd2428bc-fb5e-404e-b800-28faa0c11100" />
 
- 
+ > **Note:** All the codes for above examples can be found [here](codes).
+
 
