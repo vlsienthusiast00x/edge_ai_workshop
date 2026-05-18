@@ -49,5 +49,5 @@ To implement the polynomial regresser model on VSDSquadron PRO it is required to
 2. On the box that appears on screen find 'Select Target' section and select 'sifive-hifive1'. And click on 'Finish'.
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/d772f239-c338-4591-a83c-77554ce13c3a" />
 
-3. Close the debug configuration box and then replace the main.c with the [polynomial_regression.c](Module_2/codes) 
+3. Close the debug configuration box and then replace the main.c with the [polynomial_regression.c](codes) 
 
