@@ -22,4 +22,7 @@ A Support Vector Machine (SVM) is a supervised machine learning algorithm that c
 
 ### Implementation of SVM model on VSDSquadron PRO
 Follow the same steps described in the previous module to make project in Freedom Studio and running it, just replace the main.c file's contents with this' [svm.c](codes/svm.c)
+<img width="792" height="315" alt="image" src="https://github.com/user-attachments/assets/3bd009b3-2173-458b-bb20-4cddd0d68bc4" />
+
+As we know that this svm model classifies the input array as one of the 3 classes, in this case the output is of class 0, which is the sentosa class of Iris flowers. You can change inputs to observe the accuracy of the prediction.
 
