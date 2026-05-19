@@ -27,3 +27,7 @@ Follow the same steps described in the previous module to make project in Freedo
 
 As we know that this svm model classifies the input array as one of the 3 classes, in this case the output is of class 0, which is the sentosa class of Iris flowers. You can change inputs to observe the accuracy of the prediction.
 
+## Implementing MNIST hadwritten digit classification model
+The MNIST dataset is a benchmark collection of handwritten digit images (0–9), widely used in machine learning and deep learning. It contains 70,000 grayscale images of size 28×28 pixels, split into 60,000 training samples and 10,000 test samples. Each image is labeled with the digit it represents.
+
+<img width="1709" height="707" alt="image" src="https://github.com/user-attachments/assets/7ec72c05-3a88-4665-a714-08c9c0a5e822" />
