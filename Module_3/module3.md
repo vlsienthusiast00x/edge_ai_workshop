@@ -20,5 +20,6 @@ A Support Vector Machine (SVM) is a supervised machine learning algorithm that c
 ### Implementation using scikit
 <img width="550" height="450" alt="image" src="https://github.com/user-attachments/assets/b8ee1238-3f6d-4efa-9885-103cfdb7a3c0" />
 
+### Implementation of SVM model on VSDSquadron PRO
 
 
