@@ -32,6 +32,7 @@ The MNIST dataset is a benchmark collection of handwritten digit images (0–9),
 
 <img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/7ec72c05-3a88-4665-a714-08c9c0a5e822" />
 
+----
 To implement this model using SVM we can use the same SVC macro provided by sklearn library.
 
 <img width="792" height="673" alt="image" src="https://github.com/user-attachments/assets/385b27be-b5a1-4997-a65d-9f9e1f512958" />
