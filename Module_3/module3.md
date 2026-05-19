@@ -37,6 +37,6 @@ To implement this model using SVM we can use the same SVC macro provided by skle
 
 <img width="792" height="673" alt="image" src="https://github.com/user-attachments/assets/385b27be-b5a1-4997-a65d-9f9e1f512958" />
 
-The above picture is created mt matplotlib after providing a sample input.
+The above picture is created by matplotlib after providing a sample input data.
 
 
