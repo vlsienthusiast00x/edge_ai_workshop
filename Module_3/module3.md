@@ -15,7 +15,7 @@ In this implementation of the knn classifier we will be using a famous dataset c
 A Support Vector Machine (SVM) is a supervised machine learning algorithm that classifies data by finding an optimal hyperplane (decision boundary) that separates different classes with the maximum margin (distance between the boundary and nearest data points), where the nearest points are called support vectors, and kernels are used to handle non-linear data by transforming it into higher dimensions.
 
 -----
-<img width="753" height="474" alt="image" src="https://github.com/user-attachments/assets/ce28fa62-20e8-43dd-87fa-ad4376a7f517" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/ce28fa62-20e8-43dd-87fa-ad4376a7f517" />
 
 ### Implementation using scikit
 <img width="550" height="450" alt="image" src="https://github.com/user-attachments/assets/b8ee1238-3f6d-4efa-9885-103cfdb7a3c0" />
