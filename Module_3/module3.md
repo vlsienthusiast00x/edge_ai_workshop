@@ -21,5 +21,5 @@ A Support Vector Machine (SVM) is a supervised machine learning algorithm that c
 <img width="550" height="450" alt="image" src="https://github.com/user-attachments/assets/b8ee1238-3f6d-4efa-9885-103cfdb7a3c0" />
 
 ### Implementation of SVM model on VSDSquadron PRO
-
+Follow the same steps described in the previous module to make project in Freedom Studio and running it, just replace the main.c file's contents with this' [svm.c](codes/svm.c)
 
