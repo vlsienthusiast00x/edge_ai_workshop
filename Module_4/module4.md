@@ -42,4 +42,11 @@ This reduces memory usage, speeds up computation, and lowers power consumption �
 ✅ **In short:** Quantization trades precision for efficiency. It makes ML models smaller, faster, and more power‑friendly — which is critical for deploying neural networks on embedded systems like microcontrollers.
 
 ## Quantizing the MNIST handwritten digits SVM
-We cannot directly export our weights to our main c program because VSDSQuadron PRO has only `16KB` SRAM and doing so can profuce overflow of over `15KB` of memory
+We cannot directly export our weights to our main c program because VSDSQuadron PRO has only `16KB` SRAM and doing so can produce overflow of over `15KB` of memory. Below is the snippet of quantizing the main `mnist_svm.py`'s weights to int_8 and biases to int_32.
+```py
+scale_w = np.max(np.abs(weights)) / 127.0
+weights_q = np.round(weights / scale_w).astype(np.int8)
+
+# Biases: scale to int32
+biases_q = np.round(biases / (scale_w)).astype(np.int32)
+```
