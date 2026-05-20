@@ -44,6 +44,7 @@ This reduces memory usage, speeds up computation, and lowers power consumption â
 ## Quantizing the MNIST handwritten digits SVM
 We cannot directly export our weights to our main c program because VSDSQuadron PRO has only `16KB` SRAM and doing so can produce overflow of over `15KB` of memory. Below is the snippet of quantizing the main `mnist_svm.py`'s weights to int_8 and biases to int_32.
 ```py
+# Simple scaling: map weights to int8 range [-127,127]
 scale_w = np.max(np.abs(weights)) / 127.0
 weights_q = np.round(weights / scale_w).astype(np.int8)
 
