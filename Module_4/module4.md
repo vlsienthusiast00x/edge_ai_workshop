@@ -33,4 +33,10 @@ This reduces memory usage, speeds up computation, and lowers power consumption �
 
 ---
 
+## Trade‑offs
+- **Quantization Error** → Difference between original and quantized values  
+- **Rounding Noise** → Can reduce accuracy slightly  
+- **Precision Loss** → Especially in sensitive feedback loops  
+- **Implementation Care** → Scale and zero‑point must be applied correctly
+
 ✅ **In short:** Quantization trades precision for efficiency. It makes ML models smaller, faster, and more power‑friendly — which is critical for deploying neural networks on embedded systems like microcontrollers.
