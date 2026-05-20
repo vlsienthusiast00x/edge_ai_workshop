@@ -40,3 +40,6 @@ This reduces memory usage, speeds up computation, and lowers power consumption �
 - **Implementation Care** → Scale and zero‑point must be applied correctly
 
 ✅ **In short:** Quantization trades precision for efficiency. It makes ML models smaller, faster, and more power‑friendly — which is critical for deploying neural networks on embedded systems like microcontrollers.
+
+## Quantizing the MNIST handwritten digits SVM
+IF you have tried to run 
