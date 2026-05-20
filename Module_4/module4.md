@@ -52,3 +52,7 @@ weights_q = np.round(weights / scale_w).astype(np.int8)
 biases_q = np.round(biases / (scale_w)).astype(np.int32)
 ```
 Adding this small snippet to our code can reduce our memory usage by ×4.
+
+## Implementation on VSDSquadron PRO
+Now that we have quantized our weights and biases, we are ready to export them to a header file from which our main c program can read the weights and biases
+
