@@ -56,5 +56,5 @@ Adding this small snippet to our code can reduce our memory usage by ×4.
 ## Implementation on VSDSquadron PRO
 Now that we have quantized our weights and biases, we are ready to export them to a header file from which our main c program can read the weights and biases. After compiling the `mnist_svm.py` 2 header files are generetated `weights.h` and `input.h`. `input.h` is the input image that is taken from `X_test` array of test images that is feeded to the main c program, and `weights.h` are the weights of the model feeded to main c program.
 
-It is important to declare the weights and biases arrays in the `weights.h` as `static const` beacause this tells the program to store the weights and biases in the flash memory instead of SRAM, which, in turn, reduces the memory occupation. You can also declare the input array in the main c program as `static const`.
+It is important to declare the weights and biases arrays in the `weights.h` as `static const` because this tells the program to store the weights and biases in the flash memory instead of SRAM, which, in turn, reduces the memory occupation. You can also declare the input array in the main c program as `static const`.
 
