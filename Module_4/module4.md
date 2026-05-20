@@ -58,3 +58,4 @@ Now that we have quantized our weights and biases, we are ready to export them t
 
 It is important to declare the weights and biases arrays in the `weights.h` as `static const` because this tells the program to store the weights and biases in the flash memory instead of SRAM, which, in turn, reduces the memory occupation. You can also declare the input array in the main c program as `static const`.
 
+<img width="692" height="340" alt="image" src="https://github.com/user-attachments/assets/68806caf-66f9-4752-9a0a-208f1b70a50e" />
