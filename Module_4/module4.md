@@ -42,4 +42,4 @@ This reduces memory usage, speeds up computation, and lowers power consumption �
 ✅ **In short:** Quantization trades precision for efficiency. It makes ML models smaller, faster, and more power‑friendly — which is critical for deploying neural networks on embedded systems like microcontrollers.
 
 ## Quantizing the MNIST handwritten digits SVM
-IF you have tried to run 
+We cannot directly export our weights to our main c program because VSDSQuadron PRO has only `16KB` SRAM and doing so can profuce overflow of over `15KB` of memory
