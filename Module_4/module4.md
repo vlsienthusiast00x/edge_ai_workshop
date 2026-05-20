@@ -1,5 +1,4 @@
 # Module 4 - Memory-Constrained ML & Quantization Basics
-## ML quantization
 # Quantization in Machine Learning
 
 Quantization is the process of converting high‑precision values (like 32‑bit floating‑point numbers) into lower‑precision discrete values (such as 8‑bit integers).  
