@@ -61,7 +61,135 @@ After compiling `mnist_neural.py`, two header files are generated one for the mo
 
         # Quantize weights
         w_q = np.round(w * scale_w).astype(np.int8).flatten()
-        b_f = b.astype(np.float32).flatten()  # keep biases float
+        b_f = b.astype(np.float32).flatten() 
 ```
 This snippet quantizes the weights of the two layers.
+
+## Neural network implementation on VSDSquadron PRO
+## 1. Includes and Headers
+```c
+#include <stdio.h>
+#include <stdint.h>
+#include "weights.h"
+#include "input.h"
+```
+- **`stdio.h`** → Provides standard input/output functions like `printf`.
+- **`stdint.h`** → Defines fixed-width integer types (`int8_t`, `int32_t`).
+- **`weights.h`** → Contains the trained neural network weights and biases.
+- **`input.h`** → Contains the test input image (flattened MNIST digit).
+
+---
+
+## 2. Dense Layer Function
+```c
+void dense_layer(const int8_t *weights, const float *biases, float scale,
+                 const float *input, float *output,
+                 int in_size, int out_size, int apply_relu) {
+    for (int j = 0; j < out_size; j++) {
+        float acc = biases[j];
+        int32_t sum = 0;
+
+        for (int i = 0; i < in_size; i++) {
+            sum += (int32_t)(input[i] * 127.0f) * weights[i * out_size + j];
+        }
+
+        acc += (float)sum / scale;
+
+        // ReLU
+        output[j] = apply_relu ? (acc > 0.0f ? acc : 0.0f) : acc;
+    }
+}
+```
+
+### Explanation:
+- **Purpose**: Implements a fully connected (dense) layer of the neural network.
+- **Parameters**:
+  - `weights` → Quantized weights (`int8_t`).
+  - `biases` → Bias values (`float`).
+  - `scale` → Scaling factor to adjust quantized sums back to float.
+  - `input` → Input vector (flattened image or hidden layer).
+  - `output` → Output vector (hidden activations or logits).
+  - `in_size` → Number of input neurons.
+  - `out_size` → Number of output neurons.
+  - `apply_relu` → Flag to apply ReLU activation (used for hidden layers).
+- **Process**:
+  - Multiply input values (scaled to int8 range) with weights.
+  - Accumulate results in `sum`.
+  - Add bias and rescale back to float.
+  - Apply **ReLU** if requested (clamps negative values to 0).
+
+---
+
+## 3. Argmax Function
+```c
+int argmax(const float *logits, int size) {
+    int max_index = 0;
+    float max_val = logits[0];
+    for (int i = 1; i < size; i++) {
+        if (logits[i] > max_val) {
+            max_val = logits[i];
+            max_index = i;
+        }
+    }
+    return max_index;
+}
+```
+
+### Explanation:
+- **Purpose**: Finds the index of the largest value in the output vector.
+- **Use case**: Determines which digit (0–9) has the highest confidence score.
+- **Process**:
+  - Initialize with the first value.
+  - Iterate through all logits.
+  - Update `max_index` whenever a larger value is found.
+  - Return the index of the maximum → predicted digit.
+
+---
+
+## 4. Main Function
+```c
+int main() {
+
+    // Hidden layer output
+    float hidden[32];
+    dense_layer(layer0_weights, layer0_biases, layer0_scale,
+                input, hidden, 784, 32, 1);
+
+    // Output layer
+    float output[10];
+    dense_layer(layer1_weights, layer1_biases, layer1_scale,
+                hidden, output, 32, 10, 0);
+
+    // Prediction
+    int predicted = argmax(output, 10);
+    printf("Predicted digit: %d\n", predicted);
+
+    return 0;
+}
+```
+
+### Explanation:
+- **Step 1**: Compute hidden layer activations (32 neurons).
+  - Input: 784 pixels (flattened MNIST image).
+  - Output: 32 hidden features.
+  - ReLU applied.
+- **Step 2**: Compute output layer logits (10 neurons).
+  - Input: hidden layer activations.
+  - Output: 10 class scores (digits 0–9).
+  - No ReLU (final layer).
+- **Step 3**: Use `argmax` to select the digit with the highest score.
+- **Step 4**: Print the predicted digit.
+
+---
+
+## Summary
+This program:
+1. Loads an MNIST image (`input.h`).
+2. Passes it through a **2-layer neural network**:
+   - Hidden layer (784 → 32 neurons, ReLU).
+   - Output layer (32 → 10 neurons).
+3. Uses **argmax** to select the predicted digit.
+4. Prints the result.
+
+---
 
