@@ -48,5 +48,5 @@ mlp = MLPClassifier(hidden_layer_sizes=(32,), max_iter=20, activation='relu')
 mlp.fit(X_train, y_train)
 ```
 
-This declares the number of neurons in the hidden layer and their activiation function.
+This declares the number of neurons in the hidden layer and their activiation function and trains the model.
 
