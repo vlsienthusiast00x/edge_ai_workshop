@@ -196,5 +196,5 @@ After running the model in FreedomStudio, one can observe:-
 
 <img width="698" height="317" alt="WhatsApp Image 2026-05-21 at 13 44 51" src="https://github.com/user-attachments/assets/90b39770-57bb-4041-b1b9-5d87b4741541" />
 
-You can change inputs and must comapare the original number to the predicted one.
+You can change inputs and must compare the original number to the predicted one.
 
