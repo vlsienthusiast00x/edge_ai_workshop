@@ -41,7 +41,7 @@ For MNIST digit classification:
 ---
 
 ## Coding neural network for recognising handwritten digits
-We will use sklearn's `MPLClassifier` to predict digits. `MLPClassifier` is a strong tool for running neural network models which have small amount of data, for a big data, **Keras** is a better approach.
+We will be using the same MNIST datasat as used before. We will use sklearn's `MPLClassifier` to predict digits. `MLPClassifier` is a strong tool for running neural network models which have small amount of data, for a big data, **Keras** is a better approach.
 ```python
 # 3. Define a small MLP
 mlp = MLPClassifier(hidden_layer_sizes=(32,), max_iter=20, activation='relu')
