@@ -54,5 +54,14 @@ This declares the number of neurons in the hidden layer and their activiation fu
 
 ## Quantizing the parameters
 After compiling `mnist_neural.py`, two header files are generated one for the model's input and other containing weights and biases of each layer of the neural network. Obviously we cannot run our neural network directly on the board because the weights which are generated are in float and are 25300+ in number in this project. It is very important to keep in mind that one should only quantize the weights of each layer (in this case it is 2) not the biases because they are very small in count and have values very near to zero or in negative, so if we quantize them we will get all 0s.
+```python
+        # Compute per-layer scale for weights
+        max_abs = np.max(np.abs(w))
+        scale_w = 127.0 / max_abs if max_abs > 0 else 1.0
 
+        # Quantize weights
+        w_q = np.round(w * scale_w).astype(np.int8).flatten()
+        b_f = b.astype(np.float32).flatten()  # keep biases float
+```
+This snippet quantizes the weights of the two layers.
 
