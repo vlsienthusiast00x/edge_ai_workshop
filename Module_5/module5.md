@@ -53,5 +53,5 @@ mlp.fit(X_train, y_train)
 This declares the number of neurons in the hidden layer and their activiation function and trains the model.
 
 ## Quantizing the parameters
-After compiling `mnist_neural.py`, two header files are generated one for the model's input and other containing weights and biases of each layer of the neural network.
+After compiling `mnist_neural.py`, two header files are generated one for the model's input and other containing weights and biases of each layer of the neural network. Obviously we cannot run our neural network directly on the board because the weights which are generated are in float and are 25300+ in number.
 
