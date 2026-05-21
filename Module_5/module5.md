@@ -192,4 +192,9 @@ This C program:
 4. Prints the result.
 
 ---
+After running the model in FreedomStudio, one can observe:-
+
+<img width="698" height="317" alt="WhatsApp Image 2026-05-21 at 13 44 51" src="https://github.com/user-attachments/assets/90b39770-57bb-4041-b1b9-5d87b4741541" />
+
+
 
