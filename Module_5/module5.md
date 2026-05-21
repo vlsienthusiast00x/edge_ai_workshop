@@ -4,7 +4,9 @@
 A **neural network** is a computational model inspired by the human brain. It consists of layers of interconnected nodes (called *neurons*) that process input data and learn patterns to make predictions or classifications.
 
 ### Structure of a Neural Network
-A typical neural network has three main types of layers:
+
+<img width="474" height="298" alt="image" src="https://github.com/user-attachments/assets/c5ed41c1-fe45-46ec-acb4-59f8525572a1" />
+
 
 1. **Input Layer**
    - Receives raw data (e.g., pixel values of an image).
