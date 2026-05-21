@@ -3,7 +3,7 @@
 ## What is a Neural Network?
 A **neural network** is a computational model inspired by the human brain. It consists of layers of interconnected nodes (called *neurons*) that process input data and learn patterns to make predictions or classifications.
 
-## Structure of a Neural Network
+### Structure of a Neural Network
 A typical neural network has three main types of layers:
 
 1. **Input Layer**
@@ -19,23 +19,25 @@ A typical neural network has three main types of layers:
    - Produces the final result (e.g., class probabilities for digit recognition).
    - Often uses a softmax activation for classification tasks.
 
-## How It Works
+### How It Works
 - **Forward Propagation**: Input data flows through the layers, and each neuron computes a weighted sum of inputs plus a bias, then applies an activation function.
 - **Loss Function**: Compares the network’s prediction with the true label to measure error.
 - **Backpropagation**: Adjusts weights and biases by propagating the error backward through the network using gradient descent.
 - **Training**: Repeated forward and backward passes gradually minimize the loss, improving accuracy.
 
-## Example: Digit Recognition
+### Example: Digit Recognition
 For MNIST digit classification:
 - Input layer: 784 neurons (28×28 pixels).
 - Hidden layer: e.g., 128 neurons with ReLU activation.
 - Output layer: 10 neurons (digits 0–9) with softmax activation.
 - The network learns to map pixel patterns to digit labels.
 
-## Key Concepts
+### Key Concepts
 - **Weights**: Parameters that determine the strength of connections between neurons.
 - **Biases**: Additional parameters that shift activation functions.
 - **Activation Functions**: Introduce non-linearity, enabling the network to learn complex relationships.
 - **Epochs**: Number of times the entire dataset passes through the network during training.
 
 ---
+
+##
