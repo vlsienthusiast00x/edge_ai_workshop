@@ -183,7 +183,7 @@ int main() {
 ---
 
 ## Summary
-This program:
+This C program:
 1. Loads an MNIST image (`input.h`).
 2. Passes it through a **2-layer neural network**:
    - Hidden layer (784 → 32 neurons, ReLU).
